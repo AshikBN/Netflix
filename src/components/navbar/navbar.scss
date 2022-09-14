@@ -1,0 +1,65 @@
+.navbar{
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    font-size: 14px;
+    background: linear-gradient(to top, transparent 0%,rgb(0,0,0,0.3) 50%);
+    &.scrolled{
+        background-color: var(--main-color);
+    }
+}
+.container{
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    padding: 0 50px;
+    .left{
+        display: flex;
+        align-items: center;
+        img{
+            height: 25px;
+            margin-right: 40px;
+        }
+        span{
+            margin-right: 40px;
+        }
+
+
+    }
+    .right{
+        display: flex;
+        align-items: center;
+        img{
+            width: 30px;
+            height: 30px;
+            border-radius: 5px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+        .icons{
+            margin: 0 15px;
+        }
+        .profile{
+            cursor: pointer;
+            .options{
+                display: none;
+                background-color: var(--main-color);
+                position: absolute;
+                border-radius: 5px;
+                
+                span{
+                    padding: 10px;
+                    cursor: pointer;
+                }
+            }
+            &:hover{
+                .options{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+    
+}
